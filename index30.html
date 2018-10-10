@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Пример 30</title>
+</head>	
+<body>
+
+<script>
+var x = prompt("Введите число х: "); 
+var y = prompt("Введите число у: "); 
+var z=+x; 
+i = 2; 
+if (y>0){ 
+  while (i<=y){ 
+  z=z*x; 
+  i++; 
+} 
+alert('Число ' + x + ' в степени ' + y + ' равно ' + z); 
+}  else if (y<0){ 
+z=Math.pow(x,y); 
+ alert('Число ' + x + ' в степени ' + y + ' равно ' + z); 
+ } else if (isNaN(x)|| isNaN(y) || x=='' || y=='') 
+alert('Вы ввели некорректное значение!'); 
+else if (y==0){ 
+ z=1; 
+alert('Результат возведения любого числа (кроме нуля) в нулевую степень равен единице'); 
+ } 
+</script>
+</body>
+</html>
