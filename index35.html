@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+ <meta charset="utf-8"> 
+ 	<title>JS-5/35</title> 
+ </head> 
+ <body> 
+ <script> 
+var mushroomColor = prompt("Какого цвета гриб(белый, желтый, красный, коричневый)?").toLowerCase();
+var mushroomSkirt = prompt('У гриба есть юбка? (да/нет)').toLowerCase();
+var message = 'С грибами надо быть внимательным!';
+switch(true) {
+		case mushroomColor =='белый' && mushroomSkirt == 'нет': {
+			message = 'Вы нашли белый гриб!';
+			break;		
+		}
+		
+		case mushroomColor =='красный' && mushroomSkirt =='да':{
+			message = 'А не мухомор ли это?';
+			break;	
+		}
+		case mushroomColor =='красный' && mushroomSkirt =='нет': {
+			message = 'Может это подосиновик?';
+			break;	 
+		}
+		}
+	    alert(message);
+
+  	</script> 
+ </body> 
+ </html> 
